@@ -2,30 +2,73 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>GitHub Actions Deployment</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background: linear-gradient(135deg, #6366f1, #ec4899);
-      color: white;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5rem;
-    }
-  </style>
+  <title>Formulaire Bootstrap</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Déploiement automatique réussi 🎉</h1>
-    <br>
-    <div style="margin-top:20px; font-size:1.2rem;">
-        ✅ Version 1.1 déployée avec GitHub Actions
+
+<body class="bg-light">
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+
+        <div class="card shadow-lg">
+          <div class="card-body">
+
+            <h3 class="text-center mb-4">Contactez-nous 🚀</h3>
+
+            <form>
+              
+              <div class="mb-3">
+                <label for="name" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="votre@email.com" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="subject" class="form-label">Sujet</label>
+                <select class="form-select" id="subject">
+                  <option selected>Choisir...</option>
+                  <option value="1">Question</option>
+                  <option value="2">Support</option>
+                  <option value="3">Autre</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Votre message..."></textarea>
+              </div>
+
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="newsletter">
+                <label class="form-check-label" for="newsletter">
+                  S'inscrire à la newsletter
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">
+                Envoyer
+              </button>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
     </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
